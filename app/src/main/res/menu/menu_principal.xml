@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item
+            android:id="@+id/navigation_forum"
+            android:icon="@drawable/ic_forum_black_24dp"
+            android:title="@string/title_forum"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/navigation_adicionar_topico"
+            android:icon="@drawable/ic_adicionar_topico_black_24dp"
+            android:title="@string/title_adicionar"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/navigation_perfil"
+            android:icon="@drawable/ic_perfil_black_24dp"
+            android:title="@string/title_perfil"
+            app:showAsAction="ifRoom"
+            />
+        <item
+            android:id="@+id/navigation_deslogar"
+            android:icon="@drawable/ic_deslongar_24dp"
+            android:title="@string/title_deslongar"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+</menu>

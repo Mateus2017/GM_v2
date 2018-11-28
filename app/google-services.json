@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "381187932782",
+    "firebase_url": "https://gremminck-f6d27.firebaseio.com",
+    "project_id": "gremminck-f6d27",
+    "storage_bucket": "gremminck-f6d27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381187932782:android:6e7ef666ae2065b6",
+        "android_client_info": {
+          "package_name": "br.com.devjr.escola.gremminck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381187932782-2h0q235o3vhkoata9l8np21itahdv4oj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.devjr.escola.gremminck",
+            "certificate_hash": "dea038c034885796c3203521f6285e7c6c22a7ee"
+          }
+        },
+        {
+          "client_id": "381187932782-9kjh6v9q1k8n3blbv5dl78mt5487i5qu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABZd4mwjQpCpqpomiEWit6DIOGTNXFz1c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381187932782-9kjh6v9q1k8n3blbv5dl78mt5487i5qu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#042e4a</color>
+    <color name="colorPrimaryDark">#141f27</color>
+    <color name="colorPrimaryDarkSecund">#162631</color>
+    <color name="colorAccent">#4b4b4b</color>
+    <color name="colorSecund">#202020</color>
+
+    <color name="colorLaranja">#ff914d</color>
+    <color name="colorVermelho">#FF0000</color>
+    <color name="colorAmarelho">#FFF90D</color>
+    <color name="colorBranco">#ffffff</color>
+    <color name="colorAzulEscuro">#27435b</color>
+    <color name="colorAzulClaro">#205168</color>
+    <color name="colorAzulDark">#263238</color>
+    <color name="colorVermelhoErro">#560100</color>
+    <!-- TEXT -->
+    <color name="TextColorTitulos">#ffffff</color>
+    <color name="TextColorSubsTitulos">#dbdbdb</color>
+    <color name="TextColorTextos">#efefef</color>
+    <color name="TextButton">#002b4a</color>
+    <color name="TextHintDarck">#202020</color>
+    <color name="TextHintLight">#b3b3b3</color>
+
+    <!-- BACKGROUND -->
+    <color name="BackgroundButton">#d6d6d6</color>
+    <color name="BackgroundButtonClose">#760000</color>
+    <color name="BackgroundTranspatent">#00000000</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

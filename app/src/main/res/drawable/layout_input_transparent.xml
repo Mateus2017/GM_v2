@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:elevation="20dp"
+    android:outlineProvider="paddedBounds">
+    <solid android:color="@color/BackgroundTranspatent"/>
+    <corners android:radius="00dp"/>
+
+</shape>

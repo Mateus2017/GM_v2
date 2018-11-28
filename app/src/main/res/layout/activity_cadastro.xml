@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/logogremminckbranco" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/exo_medium"
+                android:gravity="left"
+                android:text="Efetue seu cadastro, com todos os dados corretos para que seja aceito seu perfil."
+                android:textAllCaps="true"
+                android:textColor="@color/colorBranco"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- BODY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- NOME -->
+            <EditText
+                android:id="@+id/CadastroActivityNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/layout_button_retangulo"
+                android:drawableLeft="@drawable/ic_person_black"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/TextHintDarck"
+                android:drawableTintMode="src_in"
+                android:fontFamily="@font/exo_medium"
+                android:hint="Nome completo "
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:padding="7dp"
+                android:textColor="@color/TextHintDarck"
+                android:textColorHint="@color/TextHintLight" />
+
+            <!-- EMAIL -->
+            <EditText
+                android:id="@+id/CadastroActivityEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/layout_button_retangulo"
+                android:drawableLeft="@drawable/ic_email_black"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/TextHintDarck"
+                android:fontFamily="@font/exo_medium"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:maxLength="500"
+                android:padding="7dp"
+                android:textColor="@color/TextHintDarck"
+                android:textColorHint="@color/TextHintLight" />
+
+            <!-- SENHA -->
+            <EditText
+                android:id="@+id/CadastroActivitySenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/layout_button_retangulo"
+                android:drawableLeft="@drawable/ic_lock_black"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/TextHintDarck"
+                android:fontFamily="@font/exo_medium"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:padding="7dp"
+                android:textColor="@color/TextHintDarck"
+                android:textColorHint="@color/TextHintLight" />
+
+            <!--CONFIRMAR SENHA -->
+            <EditText
+                android:id="@+id/CadastroActivitySenhaConfirme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/layout_button_retangulo"
+                android:drawableLeft="@drawable/ic_lock_black"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/TextHintDarck"
+                android:fontFamily="@font/exo_medium"
+                android:hint="Comfirma senha"
+                android:inputType="textPassword"
+                android:padding="7dp"
+                android:textColor="@color/TextHintDarck"
+                android:textColorHint="@color/TextHintLight" />
+
+            <!-- SERIE ENSINO -->
+            <LinearLayout
+                android:id="@+id/CadastroActivityDadosAluno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/CadastroActivitySerie"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_input_radius_left"
+                    android:drawableLeft="@drawable/ic_school_black"
+                    android:drawablePadding="20dp"
+                    android:drawableTint="@color/TextHintDarck"
+                    android:fontFamily="@font/exo_medium"
+                    android:hint="serie ex :1/1"
+                    android:maxLength="3"
+                    android:padding="7dp"
+                    android:textColor="@color/TextHintDarck"
+                    android:textColorHint="@color/TextHintLight" />
+
+                <EditText
+                    android:id="@+id/CadastroActivityEnsino"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_input_radius_right"
+                    android:focusable="false"
+                    android:focusedByDefault="false"
+                    android:fontFamily="@font/exo_medium"
+                    android:padding="7dp"
+                    android:textColor="@color/TextHintDarck"
+                    android:textColorHint="@color/TextHintLight" />
+            </LinearLayout>
+
+
+            <!-- DATA E GENERO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_input_radius_left"
+                    android:gravity="center"
+                    android:padding="7dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_genero_black" />
+
+                    <Spinner
+                        android:id="@+id/CadastroActivityFlagGenero"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="7dp"></Spinner>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/CadastroActivityNascimento"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_input_radius_right"
+                    android:drawableLeft="@drawable/ic_date_range_black"
+                    android:focusable="false"
+                    android:focusedByDefault="false"
+                    android:hint="Nascimento"
+                    android:padding="7dp" />
+
+            </LinearLayout>
+
+            <!-- TERMOS DE USO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_light"
+                    android:gravity="center"
+                    android:text="aceito os termos"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBranco"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/CadastroActivityTermo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:buttonTint="@color/colorBranco"
+                        android:checked="false"
+                        android:fontFamily="@font/exo_medium"
+                        android:text="DE USO"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+
+                    <CheckBox
+                        android:id="@+id/CadastroActivityTermo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:buttonTint="@color/colorBranco"
+                        android:checked="false"
+                        android:fontFamily="@font/exo_medium"
+                        android:text="DE PRIVACIDADE"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BUTTON -->
+            <LinearLayout
+                android:id="@+id/ContainerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/CadastroActivityButtonRegister"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/layout_button_retangulo"
+                    android:fontFamily="@font/exo_medium"
+                    android:text="c a d a s t r a r   d a d o s"
+                    android:textColor="@color/colorSecund"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/CadastroActivityVoltar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_light"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="F A Z E R  L O G I N"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBranco"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--PROGRESS BAR-->
+            <LinearLayout
+                android:id="@+id/ContainerProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/CadastroActivityProgressBar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_light"
+                    android:text="R E G I S T R A N D O"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

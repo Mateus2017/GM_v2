@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:elevation="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="1dp"
+        android:background="@color/colorPrimaryDark">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="#eeeeee"
+                android:fontFamily="@font/exo_light"
+                android:layout_centerHorizontal="true"
+                android:text="F O R U M"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/ForumMensagemHeaderSeach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_button_retangulo"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:focusable="false"
+                android:fontFamily="@font/exo_medium"
+                android:hint="BUSQUE NO FORUM AS MENSAGENS"
+                android:padding="5dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ForumRecyclerViewMesagens"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

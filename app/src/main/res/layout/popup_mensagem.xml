@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="#132735"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/PopupMensagemCabecalho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/PopupMensagemTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:fontFamily="@font/exo_light"
+                android:text="TITULO DA MENSAGEM"
+                android:textAllCaps="true"
+                android:textColor="@color/TextColorTitulos"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:id="@+id/PopupMensagemLinearButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/PopupMensagemButtonFechar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/layout_input"
+                    android:backgroundTint="#ffff"
+                    android:elevation="20dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="X"
+                    android:textColor="@color/TextButton"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/PopupMensagemConteudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/glacialindifference_regular"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nisi vitae tincidunt dapibus. Maecenas porta at ligula in sagittis. Morbi tincidunt lectus ut turpis feugiat sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nisi vitae tincidunt dapibus. Maecenas porta at ligula in sagittis. Morbi tincidunt lectus ut turpis feugiat sodales."
+                android:textColor="@color/TextColorTextos"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_display_popup_forum_15dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/exo_light"
+                    android:gravity="center_vertical"
+                    android:text="COMENTARIOS"
+                    android:textColor="@color/TextColorSubsTitulos"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/PopupMensagemTotalRespostas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_light"
+                    android:gravity="center|top"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/TextColorSubsTitulos"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/PopupMensagemNome"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/exo_light"
+                        android:gravity="end|center_vertical"
+                        android:text="NOME"
+                        android:textColor="@color/TextColorSubsTitulos"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/tamanhoIconePequeno"
+                        android:layout_height="@dimen/tamanhoIconePequeno"
+                        android:src="@drawable/icon_person_boy" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/PopupMensagemData"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/exo_light"
+                        android:gravity="end|center_vertical"
+                        android:text="DATA"
+                        android:textColor="@color/TextColorSubsTitulos"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/tamanhoIconePequeno"
+                        android:layout_height="@dimen/tamanhoIconePequeno"
+                        android:src="@drawable/icone_date" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--MENSAGEMS AQUI -->
+        <ListView
+            android:id="@+id/PopupMensagemCorpo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_button_retangulo"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/PopupMensagemNovaResposta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_button"
+                    android:gravity="center_vertical"
+                    android:maxHeight="30dp"
+                    android:maxLength="100"
+                    android:maxLines="10"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/colorSecund"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/PopupMensagemButtonEnviar"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_display_popup_send_15dp"
+                    android:padding="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

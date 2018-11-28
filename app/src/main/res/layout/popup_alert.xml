@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/CardViewAlertRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="200dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="#f0004f86"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/PopupAlertLinearHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#005a9a"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/PopupAlertTitulo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textColor="@color/TextColorTitulos"
+            android:fontFamily="@font/exo_medium"
+            android:text="TITULO PASSADO PELO PROGRAMADOR"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/PopupAlertButtonFechar"
+            android:layout_margin="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/layout_input"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center"
+            android:text="X"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/PopupAlertLinearBody"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6004f86">
+        <TextView
+            android:id="@+id/PopupAlertMensagem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/TextColorTextos"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/exo_light"
+            android:text="AQUI SERÁ PASSADA TODA AS INFORVAÇOES"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+<!--
+
+-->

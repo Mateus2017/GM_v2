@@ -1,0 +1,282 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="10dp"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/exo_regular"
+                            android:gravity="center_vertical"
+                            android:text="PERFIL"
+                            android:textColor="@android:color/white"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/exo_regular"
+                            android:text="G R E M M I N C K"
+                            android:textColor="@android:color/white"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/PerfilFragmentAcesso"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/exo_light"
+                            android:gravity="center_horizontal"
+                            android:text="Buscando acesso"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/PerfilFragmentLinearDados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/tamanhoIconeMedio"
+                        android:layout_height="@dimen/tamanhoIconeMedio"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/icon_person_boy" />
+
+                    <TextView
+                        android:id="@+id/PerfilFragmentNome"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/exo_light"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/tamanhoIconeMedio"
+                        android:layout_height="@dimen/tamanhoIconeMedio"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/icone_email" />
+
+                    <TextView
+                        android:id="@+id/PerfilFragmentEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo_light"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <ImageView
+                            android:layout_width="@dimen/tamanhoIconeMedio"
+                            android:layout_height="@dimen/tamanhoIconeMedio"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/icone_serie" />
+
+                        <TextView
+                            android:id="@+id/PerfilFragmentEnsino"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/exo_light"
+                            android:padding="5dp"
+                            android:gravity="center_vertical"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="@dimen/tamanhoIconeMedio"
+                            android:layout_height="@dimen/tamanhoIconeMedio"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/icone_estudent" />
+                        <TextView
+                            android:id="@+id/PerfilFragmentCurso"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/exo_light"
+                            android:padding="5dp"
+                            android:gravity="center_vertical"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/exo_light"
+                        android:gravity="left|center_vertical"
+                        android:text="TOPICOS"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="3"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/PerfilFragmentEditBusca"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layout_button_retangulo"
+                            android:drawableLeft="@drawable/ic_search_black_24dp"
+                            android:focusable="false"
+                            android:hint="CAMPO DE BUSCA"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="#004d84"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PerfilFragmentProgressBarDadosUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/PerfilFragmentInformacoes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/PerfilFragmentNenhumaMes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_thin"
+                    android:text="N Ã O  H Á  P O S T A G E M  S U A  A I N D A"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/PerflRecylerViewMensagens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:visibility="visible">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</FrameLayout>

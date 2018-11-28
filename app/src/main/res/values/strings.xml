@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gremminck</string>
+    <string name="title_perfil">PERFIL</string>
+    <string name="title_forum">FORUM</string>
+    <string name="title_adicionar">TOPICO</string>
+    <string name="title_deslongar">SAIR</string>
+</resources>
